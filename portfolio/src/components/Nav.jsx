@@ -1,26 +1,33 @@
-import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 function Nav() {
-    const [pages] = useState([
-        { name: 'About', path: '/' },
-        { name: 'Portfolio', path: '/portfolio' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'Resume', path: '/resume' }
-    ])
+    const activeStyle = {
+        color: '#3730a3',
+        textShadow: '6px 6px 8px #292524',
+    }
+
     return (
         <div className='w-full shadow-xl'>
             <div className='md:flex justify-between py-4 bg-gradient-to-br from-sky-400 to-indigo-500 h-auto'>
                 <div>
                     <span>
-
+                        <img src="" alt="" />
                     </span>
-                    <span className="text-4xl font-bold pl-5" style={{ textShadow: '2px 5px 5px #312e81' }}>Kristofer Marshall</span>
+                    <span className="antialiased text-4xl font-bold pl-5" style={{ textShadow: '2px 5px 5px #312e81' }}>Kristofer Marshall</span>
                 </div>
                 <ul className='md:flex md:items-center'>
-                    {pages.map((page) => (
-                        <li key={page.name} className='md:ml-4 px-4 cursor-pointer text-lg hover:text-sky-900 transition duration-300 ease-in-out font-mono font-semibold' style={{ textShadow: '2px 5px 5px #312e81' }}>
-                            <a href={page.path}>{page.name}</a>
-                        </li>
-                    ))}
+                    <li className='md:ml-4 px-4 cursor-pointer text-lg hover:text-sky-900 transition duration-300 ease-in-out font-mono font-semibold' style={{ textShadow: '2px 5px 5px #312e81' }}>
+                        <NavLink to='/' style={({ isActive }) => isActive ? activeStyle : undefined}>About</NavLink>
+                    </li>
+                    <li className='md:ml-4 px-4 cursor-pointer text-lg hover:text-sky-900 transition duration-300 ease-in-out font-mono font-semibold' style={{ textShadow: '2px 5px 5px #312e81' }}>
+                        <NavLink to='/portfolio' style={({ isActive }) => isActive ? activeStyle : undefined}>Portfolio</NavLink>
+                    </li>
+                    <li className='md:ml-4 px-4 cursor-pointer text-lg hover:text-sky-900 transition duration-300 ease-in-out font-mono font-semibold' style={{ textShadow: '2px 5px 5px #312e81' }}>
+                        <NavLink to='/contact' style={({ isActive }) => isActive ? activeStyle : undefined}>Contact</NavLink>
+                    </li>
+                    <li className='md:ml-4 px-4 cursor-pointer text-lg hover:text-sky-900 transition duration-300 ease-in-out font-mono font-semibold' style={{ textShadow: '2px 5px 5px #312e81' }}>
+                        <NavLink to='/resume' style={({ isActive }) => isActive ? activeStyle : undefined}>Resume</NavLink>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -28,3 +35,7 @@ function Nav() {
 }
 
 export default Nav
+
+
+{/* <a className='antialiased' href={page.path}>{page.name}</a> */ }
+{/* {pages.map((page) => ( */ }
