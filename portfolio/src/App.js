@@ -17,7 +17,7 @@ function App() {
 
       <Header />
 
-      <section className='flex justify-center h-auto bg-gradient-to-tl from-sky-700 to-indigo-800 text-stone-300'>
+      <section className='flex justify-center items-center h-screen bg-gradient-to-tl from-sky-700 to-indigo-800 text-stone-300'>
         <Routes>
           <Route path='/' element={<About />} />
           <Route path='portfolio' element={<Portfolio />} />

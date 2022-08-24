@@ -2,7 +2,7 @@ const ProjectData = [
     {
         id: 1,
         title: 'Game Getter',
-        image: '/assets/images/GameGetter.png',
+        image: 'https://github.com/StevenBolc/GameGetter/blob/main/public/assets/images/homepage-screenshot.png',
         description: 'Game Getter is an interactive application that allows users to search for over 16,700 video games from various genres, publishers, release years and more! After searching, a display of all related search results will be curated just for you.',
         live: 'https://game-getter-project-2.herokuapp.com/',
         github: 'https://github.com/StevenBolc/GameGetter'
