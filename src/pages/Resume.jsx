@@ -8,7 +8,7 @@ const Resume = () => {
             <div className='leading-7' style={{ textShadow: '5px 5px 5px #292524' }}>
                 <div className='w-1/6'>
                     <h1 className='text-4xl text-slate-400 antialiased inline'>Resume</h1>
-                    <a href="assets/KrisMarshall_Resume.pdf" className='mx-0 inline'><FaFileDownload size={60} />Download Resume</a>
+                    <a href="assets/KrisMarshall_Resume.pdf" target="_blank" className='mx-0 inline'><FaFileDownload size={60} />Download Resume</a>
                 </div>
                 <div className=''>
                     <div>
