@@ -5,7 +5,7 @@ import Card from '../components/Card'
 const Portfolio = () => {
     const projects = ProjectData
     return (
-        <div className='p-8 m-8 flex flex-wrap max-w-fit'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-16'>
             {projects.map((project) =>
                 <Card id={project.id} image={project.image} title={project.title} live={project.live} github={project.github} />
             )}
