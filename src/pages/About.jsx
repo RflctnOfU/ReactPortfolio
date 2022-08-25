@@ -3,7 +3,7 @@ import { FaUserCircle } from 'react-icons/fa'
 
 const About = () => {
     return (
-        <section className='py-48 w-2/3' style={{ textShadow: '5px 5px 5px #292524' }}>
+        <section className=' w-2/3 mb-20' style={{ textShadow: '5px 5px 5px #292524' }}>
             <div className='place-self-center flex-col pl-8'>
                 <div>
 
