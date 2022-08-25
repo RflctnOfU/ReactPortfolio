@@ -61,7 +61,7 @@ const Contact = () => {
 
     return (
 
-        <div className="my-24 flex-col flex shadow-lg bg-gradient-to-br from-indigo-500 to-indigo-700 rounded-xl w-1/2">
+        <div className="my-24 flex-col flex shadow-lg bg-gradient-to-br from-sky-600 to-indigo-700 rounded-xl w-1/2">
             <h1 className="place-self-center pt-3 text-lg">Contact Me</h1>
             <form className="form flex-col">
                 <div className="p-2">
